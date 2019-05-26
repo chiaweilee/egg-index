@@ -1,0 +1,39 @@
+{
+  "name": "egg-index",
+  "version": "0.0.0",
+  "description": "support index.html for egg-static",
+  "eggPlugin": {
+    "name": "index"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "egg": "^2.16.0",
+    "egg-bin": "^4.11.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiaweilee/egg-index.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chiaweilee/egg-index/issues"
+  },
+  "homepage": "https://github.com/chiaweilee/egg-index#readme",
+  "author": "+v",
+  "license": "MIT"
+}
