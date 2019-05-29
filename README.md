@@ -4,7 +4,7 @@ Support index.html for egg-static.
 
 * **egg-static** base on koa/static-cache.
 * **koa/static-cache:** no directory or index.html support.
-* **egg-static:** support index.html for egg-static
+* **egg-index:** support index.html for egg-static
 
 ## Installation
 
