@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = ({ prefix, dir }) => {
   return function index(ctx, next) {
-    if (ctx.url === prefix) {
+    if (ctx.request.method === 'GET' && ctx.url === prefix) {
       const file = path.join(dir, 'index.html');
 
       if (fs.existsSync(file)) {

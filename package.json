@@ -1,6 +1,6 @@
 {
   "name": "egg-index",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "support index.html for egg-static",
   "eggPlugin": {
     "name": "index"
