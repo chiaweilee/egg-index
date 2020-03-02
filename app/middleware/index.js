@@ -1,19 +1,13 @@
-'use strict';
+"use strict";
 
-const fs = require('fs');
-const path = require('path');
+const path = require("path");
 
-module.exports = ({ prefix, dir }) => {
-  return function index(ctx, next) {
-    if (ctx.request.method === 'GET' && ctx.url === prefix) {
-      const file = path.join(dir, 'index.html');
-
-      if (fs.existsSync(file)) {
-        ctx.body = fs.readFileSync(file, 'utf-8');
-        return;
-      }
+module.exports = ({ prefix }) => {
+  return async function index(ctx, next) {
+    if (ctx.request.method === "GET" && ctx.url === prefix) {
+      ctx.url = path.join(ctx.url, "index.html");
     }
 
-    return next();
+    await next();
   };
 };
