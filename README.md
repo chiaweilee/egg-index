@@ -3,8 +3,7 @@
 Support index.html for egg-static.
 
 * **egg-static** base on koa/static-cache.
-* **koa/static-cache:** no directory or index.html support.
-* **egg-index:** support index.html for egg-static
+* **egg-index:** web homepage support, eg, `/` to `/index.html`.
 
 ## Installation
 
@@ -23,6 +22,11 @@ exports.index = {
 ## Configuration
 
 ```js
+exports.idex = {
+  // option, default to 'index.html'
+  filename: 'index.html'
+};
+
 exports.static = {
   prefix: '/'
   dir: path.resolve('./myWeb'),
