@@ -22,7 +22,7 @@ exports.index = {
 ## Configuration
 
 ```js
-exports.idex = {
+exports.index = {
   // option, default to 'index.html'
   filename: 'index.html'
 };
